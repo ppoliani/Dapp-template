@@ -1,0 +1,29 @@
+{
+  "name": "cryptorbit-smart-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "ganache-cli -e 1000 --mnemonic 'exit mystery arena random unique crack guess bone fall lecture avocado speak'",
+    "bootstrap": "yarn start | yarn migrate",
+    "migrate": "truffle compile --all && truffle migate --reset",
+    "test": "scripts/test.sh",
+    "coverage": "scripts/coverage.sh"
+  },
+  "repository": "https://github.com/ppoliani/cryptorbit",
+  "author": "Pavlos Polianidis",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "truffle-hdwallet-provider": "git+https://github.com/trufflesuite/truffle-hdwallet-provider.git",
+    "zeppelin-solidity": "^1.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "ganache-cli": "^6.1.0",
+    "solidity-coverage": "^0.4.15",
+    "truffle": "^4.1.5"
+  }
+}
