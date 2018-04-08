@@ -2,6 +2,9 @@
   "name": "cryptorbit-ui",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "NETWORK=local env-cmd ./.env webpack-dev-server"
+  },
   "repository": "https://github.com/ppoliani/cryptorbit",
   "author": "Pavlos Polianidis",
   "license": "MIT",
@@ -24,6 +27,7 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.3",
     "webpack-dotenv-plugin": "^2.0.2"
   },
@@ -33,6 +37,7 @@
     "date-fns": "^1.29.0",
     "es6-promisify": "^6.0.0",
     "folktale": "^2.1.0",
+    "immutable": "^3.8.2",
     "material-ui": "v1.0.0-beta.36",
     "material-ui-icons": "^1.0.0-beta.36",
     "react": "^16.3.1",

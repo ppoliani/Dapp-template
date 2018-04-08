@@ -54,7 +54,6 @@ export default (method, url, body={}, auth=true, headers={}) =>
       resolver.resolve(json);
     }
     catch(error) {
-      console.log('>>>>>', error)
       resolver.reject(error);
     }
   })
