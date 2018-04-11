@@ -7,7 +7,7 @@ const Header =  () => (
   <AppBar position='static' color='default'>
     <Toolbar>
       <Typography type='title' color='inherit'>
-        Cryptorbit
+        Dapp Template
       </Typography>
     </Toolbar>
   </AppBar>
