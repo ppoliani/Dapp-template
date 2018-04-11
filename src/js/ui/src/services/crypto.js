@@ -1,6 +1,6 @@
 import {getWeb3, getDefaultAccount} from '../../../common/eth'
 import fetch from './api'
-import promisify from 'es6-promisify'
+import {promisify} from 'es6-promisify'
 
 const toHex = s => 
   s.split('')
